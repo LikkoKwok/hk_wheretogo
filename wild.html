@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HK Travel Blog - HK Wild</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Hi Miss Yuen I inserted below an external CSS from font-awesome solely for icon usage which doesn't apply any styling to my webpages. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+    <div class="main3">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/HK_travel_guide_logo.jpg"></a>
+            </div>
+            <div class="menu_container">
+            <a class="item" href="index.html">HOME</a>
+           
+            <div class="item">
+                <a href="local.html">LOCAL 文化</a>
+                <div class="dropdown">
+                    <div class="dropdown_content">
+                    <a href="local.html#L1">西九</a>
+                    <a href="local.html#L2">大館</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <a href="wild.html">WILD 山野</a>
+                <div class="dropdown">
+                    <div div class="dropdown_content">
+                    <a href="wild.html#W1">大澳</a>
+                    <a href="wild.html#W2">海下</a>
+                    <a href="wild.html#W3">龍脊</a>
+                    </div>
+                </div>
+            </div>
+            <a class="item" href="taste.html">TASTE 嚐味</a>
+            <a class="item" href="bazaar.html">BAZAAR 集市</a>
+            <a class="item" href="sub.html">SUBSCRIBE</a>           
+            
+            <div class="underline"></div>
+            </div>
+            <div class="hamburger" onclick="openSidebar()"><i class="fa fa-bars" aria-hidden="true"></i></div>           
+        </nav>
+    </div>
+
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar_content">
+            <div class="hamburger_close" onclick="closeSidebar()" style="padding: 2rem;"><i class="fa fa-times"></i></div>
+            <ul style="list-style: none; padding: 2rem; letter-spacing: 0.1em;">
+                <li><a href="index.html" >HOME</a></li><br>
+                <li><a href="local.html">LOCAL 文化</a></li><br>
+                <li><a href="wild.html">WILD 山野</a></li><br>
+                <li><a href="taste.html">TASTE 嚐味</a></li><br>
+                <li><a href="bazaar.html">BAZAAR 集市</a></li><br>
+                <li><a href="sub.html">SUBSCRIBE</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2 id="W1">TAI O  |  大澳</h2><br>
+        Tai O is a charming fishing village located on the western side of Lantau Island in Hong Kong. Known for its rich cultural heritage and 
+        traditional lifestyle, Tai O offers visitors a glimpse into the past, showcasing a way of life that has largely disappeared in the bustling city. 
+        The village is famous for its stilt houses, vibrant markets, and serene natural surroundings. Tai O is renowned for its handmade crafts and variety of dried seafood, 
+        including shrimp, fish, and squid. Locals have been drying seafood for generations, and the products are often sold in street markets. Another
+        must-buy item is the shrimp paste, a popular local delicacy made from fermented shrimp and is a key ingredient in many traditional Cantonese dishes.
+        You can try many traditional snacks such as taro balls and coconut candies, which are made using secret recipe and reflect the village's culinary heritage.<br><br><br>
+        <hr>
+        
+        <h2 id="W2">Hoi Ha Wan X WWF  |  海下灣海洋生物中心</h2><br>
+        <img class="img_responsive" src="images/wild_W2.jpg"/><br><br>
+        The Jockey Club HSBC WWF Hong Kong Hoi Ha Marine Life Centre is a prominent conservation and educational facility located in the Hoi Ha Wan Marine Park, 
+        a protected area known for its rich biodiversity and stunning marine ecosystems. Established by the World Wide Fund for Nature (WWF) Hong Kong, 
+        the centre aims to promote marine conservation, conduct marine research, and educate the public about the importance of protecting marine life. Visitors
+        can join guided tours led by knowledgeable staff who share insights about marine life, conservation efforts, and the importance of the Hoi Ha Wan Marine Park. 
+        These tours often include visits to the nearby coral reefs. Besides, you can explore various exhibits that showcase the rich diversity of marine species found 
+        in Hong Kong waters and participate in educational workshops/programs for schools and families, focusing on marine biology, ecology, and conservation practices.
+        The centre organizes volunteer programs irregularly for environmental enthusiasts to contribute in activities like beach clean-ups, marine surveys, 
+        and educational outreach. Please be reminded to make a <a href="https://www.wwf.org.hk/oceans/visit/" target="_blank"><b><u>reservation</b></u></a> in advance of your visit!<br><br><br>
+        <hr>
+
+        <h2 id="W3">DRAGON'S BACK  |  龍脊</h2><br>
+        <img class="img_responsive" src="images/wild_W3.jpg"/><br><br>
+        Dragon's Back is one of Hong Kong's most popular hiking trails because of its stunning views and relatively accessible route. Located in the southeastern part 
+        of Hong Kong Island, it offers a perfect blend of natural beauty, scenic vistas, and a touch of adventure, making it a favorite among both locals and tourists. 
+        The trail is named for its undulating ridges that resemble the spine of a dragon, with peaks and valleys providing breathtaking panoramas of the surrounding 
+        landscapes. The trail is considered as <a href="https://www.hkallshan.com/dragons-back/" target="_blank"><b><u>beginner-friendly</b></u></a> as it has a 
+        relatively low hiking altitude (爬升高度) and is easily accessible from the city, making it a convenient getaway for a day hike.<br>
+        After the initial climb, the trail levels out and follows the ridge line, where hikers can enjoy panoramic views of Shek O, Tai Long Wan, and the South China Sea. 
+        This section features a series of gentle ups and downs, resembling the back of a dragon. The trail typically ends in Shek O, a quaint fishing village with several 
+        dining options, including seafood restaurants and local eateries. It serves a great rest stop to relax and enjoy a meal after the hike.
+<br>
+    </div>
+    </div>
+<div class="footer">
+    <div class="footer_content">
+        2024  Likko Kwok  (special thanks to ITE3006 Class Teacher Ada)
+    </div>
+</div>
+<script>
+    function openSidebar(){
+        document.getElementById("sidebar").style.display = "block";
+    }
+
+    function closeSidebar(){
+        document.getElementById("sidebar").style.display = "none";
+    }
+
+</script>    
+</body>
+</html>

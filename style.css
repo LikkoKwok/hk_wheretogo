@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.main {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url(images/main_bg.jpg);
+    height: 80vh;
+}
+
+.main2 {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url(images/local_bg.jpg);
+    height: 80vh;
+}
+
+.main3 {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url(images/wild_bg.jpg);
+    height: 80vh;
+}
+
+.main4 {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url(images/taste_bg.jpg);
+    height: 80vh;
+}
+
+.main5 {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url(images/bazzar_bg.jpg);
+    height: 80vh;
+}
+
+
+/* a sticky navbar is employed for more user-friendly navigation: */
+.navbar {
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    z-index: 998;
+}
+
+.menu_container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 1200px;
+    height: 100px;
+    margin-left: 15%;
+    /* self-notes: important for vertically aligning items at center: */
+    align-items: center;
+    padding: 0;
+    /* self-notes: important for .underline to stay within container */
+    position: relative;
+}
+
+
+.menu_container.item {
+    font-size: 1em;
+    height: 100px;
+    cursor: pointer;
+    align-self: center;
+
+}
+
+
+.dropdown {
+    overflow: hidden;
+    list-style: none;
+    position: absolute;
+    padding: 0;
+    /* for positioning the dropdown menu: */
+    margin-top: 2.4rem;
+    margin-left: -3.4rem;
+
+}
+
+.dropdown > div{
+    translate: 0 -100%;
+    transition: all 0.5s 0.1s;
+    width: 100%;
+    height: fit-content;
+    position: relative;
+
+}
+
+.dropdown a{
+    display: block;
+    padding: 10px 80px;
+    background: white;
+
+}
+
+.dropdown a:hover {
+    background: #016339;
+    color: white;
+
+}
+
+.menu_container .underline {
+    height: 6px;
+    background: #016339;
+    position: absolute;
+    bottom: 0;
+    left: 25px;
+    width: 16%;
+    transition: 0.35s;
+    z-index:2;
+
+}
+
+nav .item:hover > .dropdown > div {
+    translate: 0;
+}
+
+/* nth-child stands for the (n)th child of the parent class; in this case it is nav.item.
+There are 6 items in total which correspond to the 6 tabs in menu, namely home, local, wild,..., subscribe.
+While the cursor hover on each tab, the "underline" will travel a specific distance 
+in terms of percentage (e.g. translate: 90%) of its initial position, signaling the visitor the active tab.*/
+
+nav .item:nth-child(1):hover ~ .underline{
+    translate: 0;
+}
+nav .item:nth-child(2):hover ~ .underline{
+    translate: 90%;
+}
+nav .item:nth-child(3):hover ~ .underline{
+    translate: 190%;
+}
+nav .item:nth-child(4):hover ~ .underline{
+    translate: 280%;
+}
+nav .item:nth-child(5):hover ~ .underline{
+    translate: 380%;
+}
+nav .item:nth-child(6):hover ~ .underline{
+    translate: 480%;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: 0.2s ease-in-out;
+    font-weight: 600;
+}
+
+a:hover{
+    color: #016339;
+}
+
+
+.logo {
+    float: left;
+    scale: 80%;
+    align-content: center;
+    padding-left: 5%;
+}
+
+.hamburger {
+    display: none;
+    margin-top: 35px;
+    margin-right: 10%;
+    cursor: pointer;
+}
+
+.hamburger_close{
+    cursor: pointer;
+}
+
+.hamburger:hover{
+    color: #016339;
+}
+
+.sidebar {
+    display: none;
+    background-color: #016339;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    text-align: right;
+    z-index: 999;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 25vw;
+    min-width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 8px;
+}
+.sidebar ul li a{
+    color: white; 
+    text-decoration: none;
+}
+.sidebar a:hover {
+    color: #000000;
+}
+
+.menu {
+    height: 80px;
+}
+
+.btn {
+    width: 200px;
+    height: 35px;
+    order: 4;
+    margin-top: 30px;
+    width: fit-content;
+}
+
+.content {
+    margin-left: 25% ;
+    margin-right: 25% ;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.footer_content {
+    margin-left: 25% ;
+    margin-right: 25% ;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    color: white;
+    padding-top: 2em;
+}
+
+.footer{
+    width: 100%;
+    height: 300px;
+    /* for fixing the footer position at the bottom: */
+    bottom: 0;
+    background: #016339;
+}
+
+
+/* responsive design:
+For a smaller screen size (<500px/ <1000px) the margin of main content decreases to 5%-10% to enhance readability;
+and the logo is centered at the navigation bar with menu collapsed to a hamburger form that is expandable onclick. 
+It helps to keep the layout neat and facilitate navigation.
+*/
+
+.img_responsive {
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 500px){
+    .content {
+        margin-left: 5% ;
+        margin-right: 5% ;
+    }
+
+    .menu_container .item{
+        display: none
+    }
+
+    .logo {
+        margin: auto;
+        padding: 0%;
+        display: inline-block;
+        scale: 0.6;    
+    }
+
+    .hamburger {
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 1000px){ 
+    .content {
+        margin-left: 10% ;
+        margin-right: 10% ;
+    }
+
+    .menu_container .item{
+        display: none
+    }
+
+    .logo {
+        margin: auto;
+        padding-left: 50%;
+        display: inline-block;
+        scale: 0.7;
+    }
+
+    .hamburger {
+        display: inline-block;
+    }
+
+}
+
+@media only screen and (max-width: 1500px){
+    .menu_container .underline {
+        display: none;}
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HK Travel Blog - HK Culture</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Hi Miss Yuen I inserted below an external CSS from font-awesome solely for icon usage which doesn't apply any styling to my webpages. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+    <div class="main2">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/HK_travel_guide_logo.jpg"></a>
+            </div>
+            <div class="menu_container">
+            <a class="item" href="index.html">HOME</a>
+           
+            <div class="item">
+                <a href="local.html">LOCAL 文化</a>
+                <div class="dropdown">
+                    <div class="dropdown_content">
+                    <a href="local.html#L1">西九</a>
+                    <a href="local.html#L2">大館</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <a href="wild.html">WILD 山野</a>
+                <div class="dropdown">
+                    <div div class="dropdown_content">
+                    <a href="wild.html#W1">大澳</a>
+                    <a href="wild.html#W2">海下</a>
+                    <a href="wild.html#W3">龍脊</a>
+                    </div>
+                </div>
+            </div>
+            <a class="item" href="taste.html">TASTE 嚐味</a>
+            <a class="item" href="bazaar.html">BAZAAR 集市</a>
+            <a class="item" href="sub.html">SUBSCRIBE</a>           
+            
+            <div class="underline"></div>
+            </div>
+            <div class="hamburger" onclick="openSidebar()"><i class="fa fa-bars" aria-hidden="true"></i></div>           
+        </nav>
+    </div>
+
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar_content">
+            <div class="hamburger_close" onclick="closeSidebar()" style="padding: 2rem;"><i class="fa fa-times"></i></div>
+            <ul style="list-style: none; padding: 2rem; letter-spacing: 0.1em;">
+                <li><a href="index.html" >HOME</a></li><br>
+                <li><a href="local.html">LOCAL 文化</a></li><br>
+                <li><a href="wild.html">WILD 山野</a></li><br>
+                <li><a href="taste.html">TASTE 嚐味</a></li><br>
+                <li><a href="bazaar.html">BAZAAR 集市</a></li><br>
+                <li><a href="sub.html">SUBSCRIBE</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2 id="L1">WKCD | 西九文化區</h2><br>
+        <a href="https://www.westk.hk/en/home" target="_blank"><b><u>The West Kowloon Cultural District (WKCD)</b></u></a> is a vibrant arts and cultural hub located 
+        along the iconic Victoria Harbour in Hong Kong. Designed to be a world-class destination for the arts, the district spans approximately 40 hectares and is 
+        home to a wide array of art exhibitions that celebrate creativity and cultural exchange.<br>
+        <ul style="margin:20px">
+            <li><h3>M+ Museum</h3>
+            M+ is Asia's first global museum of contemporary visual culture, focusing on 20th and 21st-century art, design, architecture, and moving images.
+            It houses over 6,000 works from Hong Kong, Asia, and beyond, including paintings, installations, and digital media. Visitor can experience guided tours, 
+            educational programs, and special exhibitions, making it a dynamic space for art lovers.
+            </li><br>
+            <li><h3>Hong Kong Palace Museum</h3>
+            Opened in 2022, the Hong Kong Palace Museum showcases a vast collection of Chinese art and cultural relics, enhancing appreciation for Chinese 
+            heritage. It features rotating exhibitions, many of which are borrowed from the Palace Museum in Beijing, covering topics from imperial history 
+            to traditional crafts. The building itself is a modern interpretation of traditional Chinese architecture, providing a stunning backdrop for the exhibits.
+            </li><br>
+            <li><h3>Art Park</h3>
+            The Art Park is a beautifully landscaped area offering open spaces for art installations, performances, and community events.
+            It includes gardens, performance venues, and walking paths, providing a serene environment for relaxation and cultural engagement.
+            The park also regularly hosts festivals, outdoor performances, and art workshops, making it a lively gathering place for locals and tourists alike.
+            </li>    
+        </ul><br>
+        <hr>
+        
+        <h2 id="L2">TAI KWUN | 大館</h2><br>
+        <img class="img_responsive" src="images/local_L2.jpg"/><br><br>
+        <a href="https://www.taikwun.hk/zh/" target="_blank"><b><u>Tai Kwun</b></u></a>, located in the heart of Central Hong Kong, is a revitalized cultural 
+        and heritage complex that embodies the city's rich history and vibrant arts scene. Once the site of the Central Police Station, Tai Kwun has transformed 
+        into a dynamic space where history, art, and community engagement intersect. Tai Kwun was originally built between 1864 and 1884 and served as the Central 
+        Police Station, as well as the Victoria Prison and the Central Magistracy. It functioned as a key site for law enforcement and judicial proceedings in 
+        colonial Hong Kong.<br>
+        After years of decline, the site underwent extensive restoration and revitalization, opening to the public in 2018. The project was a collaborative 
+        effort by the Hong Kong Government and the Tai Kwun Cultural and Arts Company, aiming to preserve its historical significance while repurposing it 
+        for modern use that the public can now enjoy various facilities inside: <br>
+        <ul style="margin:20px">
+            <li><h3>Heritage Buildings</h3>
+            The site features several historical buildings, including the former police station, the magistracy, and the prison. These structures showcase 
+            colonial architectural styles and have been meticulously restored to maintain their original character. Visitors may also take guided tours 
+            to explore the history of the buildings and learn about their roles in Hong Kong's past.
+            </li><br>
+            <li><h3>Art Galleries</h3>
+            Tai Kwun houses multiple art spaces that host contemporary art exhibitions, installations, and performances. These galleries feature both local 
+            and international artists, fostering a vibrant arts community. Those spaces are versatile, allowing for a range of artistic expressions from 
+            visual arts to multimedia installations.
+            </li><br>
+            <li><h3>Dining and Retail</h3>
+            Tai Kwun caters a selection of dining options, from casual eateries to fine dining restaurants, offering a diverse range of cuisines.
+            There are also boutique shops and cultural retail spaces that sell art-related merchandise, books, and unique souvenirs.
+            </li>
+
+        </ul>
+    </div>
+    </div>
+<div class="footer">
+    <div class="footer_content">
+        2024  Likko Kwok  (special thanks to ITE3006 Class Teacher Ada)
+    </div>
+</div>
+<script>
+    function openSidebar(){
+        document.getElementById("sidebar").style.display = "block";
+    }
+
+    function closeSidebar(){
+        document.getElementById("sidebar").style.display = "none";
+    }
+
+</script>    
+</body>
+</html>
